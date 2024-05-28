@@ -13,3 +13,55 @@ out/
 .settings
 .classpath
 .factorypath
+# Add these lines
+*.log
+*.txt
+*.xml
+*.json
+*.yml
+*.properties
+*.bak
+*.swp
+*.swo
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+# Ignore local configuration files
+local.properties
+# Ignore application binary files
+bin/
+# Ignore Gradle GUI config
+gradle-app.setting
+# Ignore Performance test binary files
+pt_bin/
+# Ignore Performance test log files
+pt_out/
+# Ignore TestNG test report files
+test-output/
+# Ignore JMeter binary files
+apache-jmeter-*.tgz
+.jmeter/
+# Ignore Crashlytics build/deploy artifacts
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+# Ignore Mac DS_Store files
+**/.DS_Store
+# Ignore JetBrains IDE files
+**/.idea
+*.iml
+# Ignore NetBeans IDE files
+**/nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+# Ignore VS Code files
+.vscode/
