@@ -20,13 +20,13 @@ class HelloWorldControllerTest {
     @Test
     void testHelloWorld() {
         String response = httpClient.toBlocking().retrieve("/hello");
-        Assertions.assertEquals("Hello World!", response);
+        Assertions.assertEquals("Hello World From Service!", response);
     }
 
     @Test
     void testHelloWorldReturnSuccess200() {
         var response = httpClient.toBlocking().exchange("/hello", String.class);
         Assertions.assertEquals(HttpStatus.OK, response.getStatus());
-        Assertions.assertEquals("Hello World!", response.body());
+        Assertions.assertEquals("Hello World From Service!", response.body());
     }
 }
