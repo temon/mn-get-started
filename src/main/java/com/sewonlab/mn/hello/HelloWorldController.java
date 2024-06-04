@@ -9,14 +9,14 @@ import jakarta.inject.Singleton;
 @Controller("/hello")
 public class HelloWorldController {
 
-    private final HelloWorldService helloWorldService;
+    private final MyService service;
 
-    public HelloWorldController(final HelloWorldService helloWorldService) {
-        this.helloWorldService = helloWorldService;
+    public HelloWorldController(final MyService service) {
+        this.service = service;
     }
 
     @Get(value = "/", produces = "text/plain")
     public String HelloWorld() {
-        return helloWorldService.sayHello();
+        return service.sayHello();
     }
 }
